@@ -1,3 +1,7 @@
-<article>
-  <p>This is something!</p>
-</article>
+<section class="post-list">
+  {{#each posts as |post|}}
+  <div>
+    {{> post-info post }}
+  </div>
+  {{/each}}
+</section>
