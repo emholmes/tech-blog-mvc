@@ -1,1 +1,16 @@
 {{> post-info post }}
+
+<form class="comment-form">
+  <div>
+    <label for="comment-body">Comment</label>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+
+
+{{> comments post.comments }}
+
