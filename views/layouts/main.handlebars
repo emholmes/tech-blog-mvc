@@ -9,21 +9,29 @@
 </head>
 <body>
   <header>
-    <h1><a href="/">The Tech Blog</a></h1>
+    <h1>
+      <a href=""></a>
+    </h1>
     <nav>
       <ul>
         <li>
           <a href="/">Home</a>
         </li>
+        {{#if loggedIn}}
         <li>
           <a href="/dashboard">Dashboard</a>
         </li>
+        {{/if}}
+        {{#unless loggedIn}}
         <li>
           <a href="/login">Login</a>
         </li>
+        {{/unless}}
+        {{#if loggedIn}}
         <li>
           <button id="logout">Logout</button>
         </li>
+        {{/if}}
       </ul>
     </nav>
   </header>
@@ -34,6 +42,7 @@
 
   <footer></footer>
 
+  <script src="/javascript/header.js"></script>
   <script src="/javascript/logout.js"></script>
 </body>
 </html>
