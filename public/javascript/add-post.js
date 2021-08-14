@@ -1,6 +1,6 @@
 function viewPostForm() {
   const newPostForm = document.querySelector(".new-post-section");
-  const postSection = document.querySelector(".dash-post-section");
+  const postSection = document.querySelector(".dashboard-articles");
 
   newPostForm.style.display = "block";
   postSection.style.display = "none";

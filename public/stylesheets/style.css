@@ -117,24 +117,24 @@ nav ul li a:hover,
 }
 
 /* Article styles on Dashboard */
-.dash-post-section section {
+.dashboard-articles section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.dash-post-section section {
+.dashboard-articles article {
   background-color: var(--tertiary-color);
   margin: 20px 30px;
   border-radius: 5px;
   padding: 10px 20px;
 }
 
-.dash-post-section section:hover {
+.dashboard-articles article:hover {
   background-color: var(--primary-color);
 }
 
-.dash-post-section a {
+.dashboard-articles a {
   color: #FFF;
 }
 

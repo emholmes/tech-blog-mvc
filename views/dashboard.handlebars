@@ -1,17 +1,17 @@
 <h2>Your Dashboard</h2>
 
 {{#if posts.length}}
-<div class="dash-post-section">
+<div class="dashboard-articles">
   {{#each posts as |post|}}
   <a href="/dashboard/edit/{{id}}">
-    <section>
+    <article>
       <div class="title">
         {{title}}
       </div>
       <div class="meta">
         {{format_date created_at}}
       </div>   
-    </section>
+    </article>
   </a>
   {{/each}}
 </div>
