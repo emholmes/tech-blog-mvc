@@ -1,6 +1,7 @@
+<h2>Your Dashboard</h2>
+
 {{#if posts.length}}
-<section>
-  <h2>Your Dashboard</h2>
+<section class="post-section">
   <ol>
     {{#each posts as |post|}}
     <li>
@@ -10,3 +11,11 @@
   </ol>
 </section>
 {{/if}}
+
+<div class="new-post-section" style="display:none">
+  {{> new-post }}
+</div>
+
+<button class="new-post-btn">+ New Post</button>
+
+<script src="/javascript/post-form.js"></script>
