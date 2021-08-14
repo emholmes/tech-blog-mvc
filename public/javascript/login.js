@@ -51,3 +51,21 @@ async function loginUser(event) {
 }
 
 document.querySelector(".login-form").addEventListener("submit", loginUser);
+
+// switch between signup and login forms
+const signupSection = document.querySelector(".signup-section");
+const loginSection = document.querySelector(".login-section"); 
+
+function signupInstead() {
+  signupSection.style.display = "block";
+  loginSection.style.display = "none";
+}
+
+document.querySelector("#signup-instead").addEventListener("click", signupInstead);
+
+function loginInstead() {
+  signupSection.style.display = "none";
+  loginSection.style.display = "block";
+}
+
+document.querySelector("#login-instead").addEventListener("click", loginInstead);
