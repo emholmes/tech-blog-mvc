@@ -79,3 +79,38 @@ nav ul li a:hover,
 #logout:hover {
   border-bottom: 2px solid var(--secondary-color);
 }
+
+/* Article styles on Homepage */
+.post-list {
+  margin-bottom: 40px;
+}
+
+.post-list article {
+  border: 2px solid var(--primary-color);
+  margin: 15px 30px 10px;
+}
+
+.post-list article:first-child {
+  margin-top: 20px;
+}
+
+.post-list article .title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  font-size: 1.125rem;
+}
+
+.post-list article .title .meta {
+  color: var(--secondary-color);
+}
+
+.post-list article .title a {
+  color: var(--secondary-color);
+}
+
+.post-list article .content {
+  padding: 15px 30px 15px 20px;
+}
