@@ -22,6 +22,10 @@ body {
   margin: 0 auto;
 }
 
+main {
+  margin-bottom: 40px;
+}
+
 a {
   text-decoration: none;
 }
@@ -82,10 +86,6 @@ nav ul li a:hover,
 }
 
 /* Article styles on Homepage */
-.post-list {
-  margin-bottom: 40px;
-}
-
 .post-list article {
   border: 2px solid var(--primary-color);
   margin: 15px 30px 10px;
@@ -117,10 +117,15 @@ nav ul li a:hover,
 }
 
 /* Article styles on Dashboard */
-.dashboard-articles section {
+.dashboard-articles {
+  margin-bottom: 40px;
+}
+
+.dashboard-articles article {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  font-size: 1.125rem;
 }
 
 .dashboard-articles article {
@@ -136,6 +141,22 @@ nav ul li a:hover,
 
 .dashboard-articles a {
   color: #FFF;
+}
+
+.new-post-btn {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #FFF;
+  padding: 10px 15px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+
+.new-post-btn:hover {
+  color: var(--secondary-color);
 }
 
 
