@@ -1,16 +1,18 @@
 <h2>Your Dashboard</h2>
 
 {{#if posts.length}}
-<div class="post-section">
+<div class="dash-post-section">
   {{#each posts as |post|}}
-  <section>
-    <div class="title">
-      <a href="/dashboard/edit/{{id}}">{{title}}</a>
-    </div>
-    <div class="meta">
-      {{format_date created_at}}
-    </div>   
-  </section>
+  <a href="/dashboard/edit/{{id}}">
+    <section>
+      <div class="title">
+        {{title}}
+      </div>
+      <div class="meta">
+        {{format_date created_at}}
+      </div>   
+    </section>
+  </a>
   {{/each}}
 </div>
 {{/if}}
@@ -22,4 +24,3 @@
 <button class="new-post-btn">+ New Post</button>
 
 <script src="/javascript/add-post.js"></script>
-<script src="/javascript/edit-post.js"></script>

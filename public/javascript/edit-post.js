@@ -25,4 +25,4 @@ async function editPost(event) {
   }
 }
 
-document.querySelector(".update-post-btn").addEventListener("submit", editPost);
+document.querySelector(".update-post-btn").addEventListener("click", editPost);

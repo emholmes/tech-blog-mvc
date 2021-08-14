@@ -7,6 +7,7 @@
 :root {
   --primary-color: #272343;
   --secondary-color: #BAE8E8;
+  --tertiary-color: #8884a2;
   --serif: Georgia, serif;
   --sans-serif: Arial, Helvetica, sans-serif;
 }
@@ -114,3 +115,28 @@ nav ul li a:hover,
 .post-list article .content {
   padding: 15px 30px 15px 20px;
 }
+
+/* Article styles on Dashboard */
+.dash-post-section section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dash-post-section section {
+  background-color: var(--tertiary-color);
+  margin: 20px 30px;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.dash-post-section section:hover {
+  background-color: var(--primary-color);
+}
+
+.dash-post-section a {
+  color: #FFF;
+}
+
+
+  
