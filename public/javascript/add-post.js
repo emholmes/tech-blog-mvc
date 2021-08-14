@@ -1,3 +1,13 @@
+function viewPostForm() {
+  const newPostForm = document.querySelector(".new-post-section");
+  const postSection = document.querySelector(".post-section");
+
+  newPostForm.style.display = "block";
+  postSection.style.display = "none";
+}
+
+document.querySelector(".new-post-btn").addEventListener("click", viewPostForm);
+
 async function createNewPost() {
   const title = document.querySelector("#post-title").value;
   const content = document.querySelector("#post-content").value;
