@@ -4,7 +4,12 @@
 <div class="post-section">
   {{#each posts as |post|}}
   <section>
-    {{> post-info post}}
+    <div class="title">
+      <a href="/dashboard/edit/{{id}}">{{title}}</a>
+    </div>
+    <div class="meta">
+      {{created_at}}
+    </div>   
   </section>
   {{/each}}
 </div>
@@ -17,3 +22,4 @@
 <button class="new-post-btn">+ New Post</button>
 
 <script src="/javascript/add-post.js"></script>
+<script src="/javascript/edit-post.js"></script>
