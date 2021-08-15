@@ -101,7 +101,8 @@ login/signup form styles */
 .signup-section,
 .new-post-section, 
 .edit-post-section,
-.comment-form {
+.comment-form, 
+.comment {
   font-size: 1.125rem;
   margin: 15px 30px;
   border: 2px solid var(--primary-color);
@@ -314,4 +315,12 @@ login/signup form styles */
 
 .comment-form form {
   margin-top: 0px;
+}
+
+.comment .text {
+  padding: 20px;
+}
+
+.comment .text p:first-child {
+  padding-bottom: 20px;
 }
