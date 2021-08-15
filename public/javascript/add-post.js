@@ -9,8 +9,8 @@ function viewPostForm() {
 document.querySelector(".new-post-btn").addEventListener("click", viewPostForm);
 
 async function createNewPost() {
-  const title = document.querySelector("#post-title").value;
-  const content = document.querySelector("#post-content").value;
+  const title = document.querySelector("#post-title").value.trim();
+  const content = document.querySelector('textarea[name="post-content"]').value.trim();
 
   const response = await fetch("/api/posts", {
     method: "POST",
