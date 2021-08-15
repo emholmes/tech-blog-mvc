@@ -14,9 +14,10 @@ const sess = {
   secret: "mysupersecretcookiesecretshow",
   cookie: {
     // maxAge: 60000
-    // expires: 60000
+    expires: 1800000
   },
-  resave: false,
+  resave: true,
+  rolling: true,
   saveUninitialized: true,
   store: new SequelizeStore({
     db: sequelize
