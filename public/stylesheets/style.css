@@ -324,6 +324,7 @@ login/signup form styles */
 
 .comment .text {
   padding: 20px;
+  font-size: 1rem;
 }
 
 .comment .text p:first-child {
