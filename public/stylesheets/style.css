@@ -131,6 +131,7 @@ nav ul li a:hover,
   margin-bottom: 10px;
   padding: 2px 5px;
   border-radius: 5px;
+  font-size: 1.125rem;
 }
 
 .login-form button,
