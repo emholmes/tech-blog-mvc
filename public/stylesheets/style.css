@@ -282,7 +282,8 @@ login/signup form styles */
 
 /* Additional Create New/Edit Post styles */
 .new-post-form .post-content,
-.edit-post-form .post-content {
+.edit-post-form .post-content,
+.comment-form form .comment-body {
   padding: 5px;
   font-family: var(--sans-serif);
 }
