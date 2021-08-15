@@ -18,7 +18,6 @@ html {
 
 body {
   font-family: var(--sans-serif);
-  max-width: 1500px;
   margin: 0 auto;
 }
 

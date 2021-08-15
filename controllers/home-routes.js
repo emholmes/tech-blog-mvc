@@ -91,10 +91,4 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
-// any routes that don't exist redirect back to homepage
-// router.get('/*', (req, res) => {
-//   res.redirect("/");
-//   res.render("homepage");
-// });
-
 module.exports = router;
