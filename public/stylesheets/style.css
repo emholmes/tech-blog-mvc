@@ -152,7 +152,7 @@ login/signup form styles */
 .new-post-form input,
 .new-post-form textarea,
 .edit-post-form input,
-.edit-post-form textarea
+.edit-post-form textarea,
 .comment-form form input,
 .comment-form form textarea {
   height: 40px;
@@ -285,6 +285,11 @@ login/signup form styles */
 .edit-post-form .post-content {
   padding: 5px;
   font-family: var(--sans-serif);
+}
+
+.new-post-form textarea,
+.edit-post-form textarea {
+  height: 70px;
 }
 
 .update-post-btn {
