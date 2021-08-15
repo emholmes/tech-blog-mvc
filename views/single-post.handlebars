@@ -1,16 +1,12 @@
-{{> post-info post }}
+<section class="blog-post">
+  {{> blog-post post }}
+</section>
 
-<form class="comment-form">
-  <div>
-    <label for="comment-body">Comment</label>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">Submit</button>
-  </div>
-</form>
-
+{{#if loggedIn}}
+<section class="comment-form">
+  {{> comment-form }}
+</section>
+{{/if}}
 
 {{> comments post.comments }}
 

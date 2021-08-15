@@ -100,7 +100,8 @@ login/signup form styles */
 .login-section,
 .signup-section,
 .new-post-section, 
-.edit-post-section {
+.edit-post-section,
+.comment-form {
   font-size: 1.125rem;
   margin: 15px 30px;
   border: 2px solid var(--primary-color);
@@ -109,7 +110,8 @@ login/signup form styles */
 .login-section section,
 .signup-section section,
 .new-post-form, 
-.edit-post-form {
+.edit-post-form,
+.comment-form form {
   padding: 10px;
 }
 
@@ -125,7 +127,8 @@ login/signup form styles */
 .login-form,
 .signup-form,
 .new-post-form,
-.edit-post-form {
+.edit-post-form, 
+.comment-form form {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -136,7 +139,10 @@ login/signup form styles */
 .signup-form label, .signup-form input,
 .new-post-form label, .new-post-form input,
 .new-post-form textarea,
-.edit-post-form label, .edit-post-form input, .edit-post-form textarea {
+.edit-post-form label, .edit-post-form input, .edit-post-form textarea,
+.comment-form form label,
+.comment-form form input,
+.comment-form form textarea {
   flex: 100%;
 }
 
@@ -145,7 +151,9 @@ login/signup form styles */
 .new-post-form input,
 .new-post-form textarea,
 .edit-post-form input,
-.edit-post-form textarea {
+.edit-post-form textarea
+.comment-form form input,
+.comment-form form textarea {
   height: 40px;
   margin-bottom: 10px;
   padding: 2px 5px;
@@ -158,7 +166,8 @@ login/signup form styles */
 .signup-form button, 
 #add-post-btn, 
 .update-post-btn,
-.delete-post-btn {
+.delete-post-btn,
+.comment-form form button {
   flex: 100%;
   padding: 8px;
   margin: 5px 0 15px 0;
@@ -191,7 +200,8 @@ login/signup form styles */
 }
 
 /* Article styles on Homepage */
-.post-list article {
+.post-list article,
+.blog-post article {
   border: 2px solid var(--primary-color);
   margin: 15px 30px 10px;
 }
@@ -200,7 +210,8 @@ login/signup form styles */
   margin-top: 20px;
 }
 
-.post-list article .title {
+.post-list article .title, 
+.blog-post article .title {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -217,7 +228,12 @@ login/signup form styles */
   color: var(--secondary-color);
 }
 
-.post-list article .content {
+.post-list article .title a:hover {
+  color: var(--tertiary-color);
+}
+
+.post-list article .content,
+.blog-post article .content {
   padding: 15px 30px 15px 20px;
 }
 
@@ -259,7 +275,6 @@ login/signup form styles */
   cursor: pointer;
 }
 
-
 .new-post-btn:hover {
   color: var(--secondary-color);
 }
@@ -273,4 +288,30 @@ login/signup form styles */
 
 .update-post-btn {
   margin-bottom: 10px;
+}
+
+/* Additional Post & Comment styles */
+.blog-post .title {
+  color: #FFF;
+}
+
+.top-border {
+  background-color: var(--primary-color);
+  height: 30px;
+}
+
+.comment-form form {
+  font-size: 1rem;
+}
+
+.comment-form form label {
+  padding-bottom: 5px;
+}
+
+.comment-form form textarea {
+  height: 100px;
+}
+
+.comment-form form {
+  margin-top: 0px;
 }
