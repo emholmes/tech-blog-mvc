@@ -2,7 +2,8 @@
 ## Model-View-Controller Challenge
 
 ## Description
-This week we were challenged to build a blog style website where users can publish blog posts and comment on other users' posts. The main theme this week is to follow the MVC paradigm for the app's architectural structure. A few other key packages are also introduced this week, including: Handlebars.js templating language and express-session for user authentication. This app is deployed to Heroku. The development of this application marks a significant milestone in the bootcamp as my first solo full-stack web application.
+This week we were challenged to build a blog style website where users can publish blog posts and comment on other users' posts. The main theme this week is to follow the MVC paradigm for the app's architectural structure. A few other key packages are also introduced this week, including: Handlebars.js templating language and express-session for user authentication. Authenticated users session will expire after 30 minutes of inactivity. This app is deployed to Heroku. 
+The development of this application marks a significant milestone in the bootcamp as my first solo full-stack web application.
 
 Deployed Application (via Heroku): https://tech-blog-mvc-eh.herokuapp.com/dashboard 
 
