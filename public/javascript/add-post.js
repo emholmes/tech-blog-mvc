@@ -1,15 +1,14 @@
-const addPostBtn = document.querySelector(".new-post-btn");
-
 function viewPostForm() {
   const newPostForm = document.querySelector(".new-post-section");
   const postSection = document.querySelector(".dashboard-articles");
-
-  newPostForm.style.display = "block";
-  postSection.style.display = "none";
+  const addPostBtn = document.querySelector(".new-post-btn");
+  
   addPostBtn.style.display = "none";
+  postSection.style.display = "none";
+  newPostForm.style.display = "block";
 }
 
-addPostBtn.addEventListener("click", viewPostForm);
+document.querySelector(".new-post-btn").addEventListener("click", viewPostForm);
 
 async function createNewPost() {
   const title = document.querySelector("#post-title").value.trim();

@@ -1,5 +1,5 @@
-{{#if posts.length}}
 <div class="dashboard-articles">
+  {{#if posts.length}}
   {{#each posts as |post|}}
   <a href="/dashboard/edit/{{id}}">
     <article>
@@ -12,13 +12,13 @@
     </article>
   </a>
   {{/each}}
+  {{/if}}
 </div>
-{{/if}}
 
 <div class="new-post-section" style="display:none">
   {{> new-post }}
 </div>
 
-<button class="new-post-btn">+ New Post</button>
+<button class="new-post-btn" style="display: block;">+ New Post</button>
 
 <script src="/javascript/add-post.js"></script>
